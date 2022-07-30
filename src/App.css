@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(140, 106, 168);
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 10vh;
+  width: 100%;
+  background-color: #311847;
+  font-size: 40px;
+  position: fixed;
+  color: white;
+
+}
+
+nav *{
+  width: 33%;
+}
+
+nav h1{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 50%;
+  text-align: right;
+
+}
+
+li {
+  list-style-type: none;
+  
+}
+
+section {
+  width: 50%;
+  height: 23vh;
+}
+
+#create_task {
+  display: grid;
+  grid-template: 
+  "a a a . c . ." 1fr
+  "b b b . . . ." 1fr
+  "d d d d d . e" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  padding-top: 10vh;
+  height: 100%;
+  background-color: #643c88;
+  row-gap: 6px;
+  padding-bottom: 20px;
+}
+
+#create_task > #task_title {
+  grid-area: a;
+  border: solid black 1px;
+}
+
+#create_task > #task_due_date {
+  grid-area: b;
+  border: solid black 1px;
+}
+
+#create_task > select {
+  grid-area: c;
+  border: solid black 1px;
+}
+
+#create_task > #task_description {
+  grid-area: d;
+  border: solid black 1px;
+}
+
+#create_task > #submit_task_btn {
+  grid-area: e;
+  border: solid black 1px;
+}
+
+#list_task {
+  min-height: 72vh;
+  overflow-y: scroll;
+  width: 50%;
+  background-color: #643c88;
+  color: white;
+}
+
+
+.task_container {
+  width: 100%;
+  background-color: #311847;
+  display: grid;
+  grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+  text-align: center;
+  color: white;
+}
+
+.task_container > * {
+  border: 1px solid black;
+}
+
+#task_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+#task_header > * {
+  border: 1px solid black;
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #311847;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#trans_flag{
+  margin-left: 5px
+}
+
+#name_nicolle {
+  color:rgb(140, 140, 255);
+}
