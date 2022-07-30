@@ -1,16 +1,6 @@
 export default function CreateTask() {
     const handleSubmit = (e) => {
         e.preventDefault(); //previne o comportamento pardão do form input type submit (neste caso, recarregar a página)
-
-        let headers = new Headers()
-        headers.append("Accept", "*/*")
-        
-        fetch(`${import.meta.env.VITE_API_URL}`, {
-            method: 'POST',
-            headers: headers,
-            mode: "no-cors",
-            body: new FormData(document.getElementById("create_task"))
-        })
     }
     return (
         <section>
