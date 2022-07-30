@@ -10,7 +10,7 @@ export default function Main() {
         let headers = new Headers()
         headers.append("Accept", "*/*")
         
-        fetch(`${import.meta.env.VITE_API_URL}/pending`, {
+        fetch(`${import.meta.env.VITE_API_URL}pending`, {
             headers: headers
         }).then(
             data => { 
